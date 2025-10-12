@@ -31,7 +31,7 @@ struct node*new1;
 new1=(struct node*)malloc(sizeof(struct node));
 printf("enter element to push:");
 scanf("%d",&n);
-new1->data=x;
+new1->data=n;
 new1->next=top; //link new node to previous top
 top=new1; //move the top tp new node
 printf("%d pushed into stack\n",x);
