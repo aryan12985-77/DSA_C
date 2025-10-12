@@ -37,17 +37,20 @@ void push() {
     } else {
         printf("Enter element to push: ");
         scanf("%d", &n);
-        stack[++top] = n;
+        stack[top] = n;
+        top++;
         printf("%d pushed to stack\n", n);
     }
 }
 
 void pop() {
+    int n;
     if (top == -1) {
         printf("Stack Underflow\n");
     } else {
-        int popped = stack[top--];
-        printf("Popped element: %d\n", popped);
+        n=stack[top];
+        top--;
+        printf("Popped element: %d\n", n);
     }
 }
 
