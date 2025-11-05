@@ -149,3 +149,87 @@ do{
 }while(choice!=7);
 return 0;
 }
+
+/*
+Algorithm for bst operations/functions
+#function to create a new node
+algorithm newNode(int value){
+struct node*temp=(struct node*)malloc(sizeof(new node));
+temp->data=value;
+temp->left=temp->right=NULL;
+retturn temp;
+}
+
+#function to insert a node in bst
+Algorithm insert(struct node*root,int value){
+if(root==NULL)
+    return newNode(value);
+    if(value<root->data)
+    root->left=insert(root->left,value);
+    else if(value>root->data)
+    root->right=insert(root->right,value);
+    return root;
+}
+
+#Function to search a node in bst
+ Algorithm search(struct node*root,int key){
+if(root==NULL || root->data==key)
+return root;
+
+if(key<root->data)
+return search(root->left,key);
+else
+return search(root->right,key);
+}
+
+#Find minimum value node(used in d eletion of node)
+Algorithm minValue(struct node*node){
+sgtruct node*current=node;
+while(current && current->left!=NULL)
+    current =current->left;
+    return current;
+}
+
+#Function for delete a node
+Algorithm deleteNode(struct node*root,int key){
+if(root==NULL)
+    return root;
+if(key<root->data)
+    root->left=deleteNode(root->left,key);
+
+else if(key>root->data)
+    root->right=deleteNode(root->right,key);
+
+else{
+    if(root->left==NULL)
+        struct node*temp=root->right;
+        free(root);
+        return temp;
+    else if(root->right =NULL)
+    struct node*temp=root->left;
+    free(root);
+}
+//node with two children
+struct node*temp=minValue(root->right);
+root->data=temp->data;
+root->right=deleteNode(root->right,temp->data);
+}
+}
+
+# Traversal in BST
+Algorithm inorder(struct node*root){
+if(root!=NULL)
+    inorder(root->left);
+    printf("%d",root->data);
+    inorder(root->right);
+}
+
+Algorithm preorder(struct node*root){
+if(root!=NULL)
+    printf("%d",root->data);
+    preorder(root->left);
+    preorder(root->right);
+}
+*/
+
+
