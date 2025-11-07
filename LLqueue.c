@@ -30,7 +30,7 @@ int enqueue(int x){
 struct node*newNode=(struct node*)malloc(sizeof(struct node));
 //check if memory allocation success
 if(newNode==NULL){
-    printf("memoey allocation fauled\n");
+    printf("memoey allocation faileded\n");
 }
 //enter element to insert and store in x
 printf("Enter element to insert:\n");
@@ -82,3 +82,4 @@ while(p!=NULL){
 }
 printf("\n");
 }
+
