@@ -1,3 +1,4 @@
+//breadth first search
 #include <stdio.h>
 #include <conio.h>
 #define MAX 10
@@ -77,3 +78,4 @@ int main(){
 
     BSF(start, n);
 }
+
