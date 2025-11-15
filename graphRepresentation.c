@@ -20,7 +20,7 @@ getch();
 return 1;
 }*/
 
-
+/*
 //grapg representation using input number of edges
 #include<stdio.h>
 #include<conio.h>
@@ -52,3 +52,38 @@ for(i=1;i<=n;i++)
     getch();
     return 1;
 }
+*/
+
+/*
+//graph representation using edge list(edge between vertices)
+#include<stdio.h>
+#include<conio.h>
+struct edge{
+int src;//starting vertex of edge
+int dest;//ending vertex of edge
+};
+int main(){
+int v,e;
+//take number of edges
+printf("ENnter number of edges:");
+scanf("%d",&e);
+
+//take number of vertices
+printf("Enter number of vertices:");
+scanf("%d",&v);
+
+//create an array of edges
+struct edge edges[e];
+printf("\nEnter each edge:");
+//input all edges
+for(int i=0;i<e;i++){
+    scanf("%d%d",&edges[i].src,&edges[i].dest);
+}
+//display the graph edge list
+printf("\nGraph representation:\n");
+for(int i=0;i<e;i++){
+    printf("Edge%d:%d--%d\n",i+1,edges[i].src,edges[i].dest);
+}
+return 0;
+}
+*/
