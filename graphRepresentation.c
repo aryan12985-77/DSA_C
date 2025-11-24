@@ -1,6 +1,6 @@
 //graph input using adjancy matrix
 //this code representation by using manual value input of matrices
-/*#include<stdio.h>
+#include<stdio.h>
 int main(){
 int v,i,j;
 int graph[10][10];//define 2d array for store matrix
@@ -18,9 +18,9 @@ printf("\n");
 }
 getch();
 return 1;
-}*/
+}
 
-/*
+
 //grapg representation using input number of edges
 #include<stdio.h>
 #include<conio.h>
@@ -52,9 +52,9 @@ for(i=1;i<=n;i++)
     getch();
     return 1;
 }
-*/
 
-/*
+
+
 //graph representation using edge list(edge between vertices)
 #include<stdio.h>
 #include<conio.h>
@@ -86,4 +86,4 @@ for(int i=0;i<e;i++){
 }
 return 0;
 }
-*/
+
