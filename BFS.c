@@ -47,9 +47,7 @@ void BSF(int start, int n){   // (you wrote BSF, so I kept it same)
         printf("%d ", current);
 
         //visit all adjacent vertices of current
-        for(i = 0; i < n; i++){
-            // ❌ ERROR FIX: you wrote  if(graph[i] == 1)
-            // ✔️ CORRECTION: must check graph[current][i]
+        for(i = 0; i < n; i++){
             if(graph[current][i] == 1 && visited[i] == 0){
                 enqueue(i);
                 visited[i] = 1;
